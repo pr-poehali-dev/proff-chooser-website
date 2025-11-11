@@ -47,6 +47,11 @@ const professions: Profession[] = [
   { id: 16, title: 'SEO-специалист', category: 'Маркетинг', salary: '80 000 - 180 000 ₽', description: 'Продвижение сайтов в поисковых системах', demand: 77 },
   { id: 17, title: 'Бизнес-аналитик', category: 'Менеджмент', salary: '130 000 - 260 000 ₽', description: 'Анализ бизнес-метрик и оптимизация процессов', demand: 83 },
   { id: 18, title: 'Копирайтер', category: 'Маркетинг', salary: '60 000 - 140 000 ₽', description: 'Создание рекламных и информационных текстов', demand: 72 },
+  { id: 19, title: 'Врач', category: 'Медицина', salary: '80 000 - 250 000 ₽', description: 'Диагностика, лечение и профилактика заболеваний', demand: 92 },
+  { id: 20, title: 'Юрист', category: 'Юриспруденция', salary: '90 000 - 300 000 ₽', description: 'Правовое консультирование и защита интересов клиентов', demand: 81 },
+  { id: 21, title: 'Экономист', category: 'Финансы', salary: '70 000 - 180 000 ₽', description: 'Анализ финансовых показателей и планирование бюджета', demand: 79 },
+  { id: 22, title: 'Прокурор', category: 'Юриспруденция', salary: '100 000 - 200 000 ₽', description: 'Надзор за соблюдением законов и поддержание обвинения', demand: 68 },
+  { id: 23, title: 'Программист', category: 'IT', salary: '120 000 - 280 000 ₽', description: 'Разработка программного обеспечения и приложений', demand: 94 },
 ];
 
 const testQuestions: TestQuestion[] = [
@@ -122,7 +127,7 @@ const Index = () => {
   const [testStarted, setTestStarted] = useState<boolean>(false);
   const [testCompleted, setTestCompleted] = useState<boolean>(false);
 
-  const categories = ['Все', 'IT', 'Дизайн', 'Менеджмент', 'Маркетинг'];
+  const categories = ['Все', 'IT', 'Дизайн', 'Менеджмент', 'Маркетинг', 'Медицина', 'Юриспруденция', 'Финансы'];
   
   const filteredProfessions = selectedCategory === 'Все' 
     ? professions 
